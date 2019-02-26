@@ -39,10 +39,11 @@
 						{{ content }}
 
 						Our animal: {{ page.animal }}
-
-						{% if page.animal %}
-								This page has an animal: {{ page.animal }}
-						{% endif %}
+						{% for p in site.pages %}
+							{% if page.animal == "rodent" %}
+									<a href="{{ p.permalink }}"> {{p.title }} </a>
+							{% endif %}
+						{% endfor %}
 
 
 		<hr>
