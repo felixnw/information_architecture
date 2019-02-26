@@ -41,7 +41,7 @@
 						Our animal: {{ page.animal }}
 						{% for p in site.pages %}
 							{% if page.animal == "rodent" %}
-									<a href="{{ p.permalink }}"> {{p.title }} </a>
+									<a href="{{ p.url }}"> {{p.title }} </a>
 							{% endif %}
 						{% endfor %}
 
