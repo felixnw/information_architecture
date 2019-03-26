@@ -39,10 +39,62 @@ body {
 	something wrong. 	
 */
 .container {
-	padding: 1em;
-	background-color: #F0F0F0;
+	background-color: #322F2F;
 }
 
+.global-nav {
+	font-size: 1.5em;
+	padding: 1em;
+	position: fixed;
+	width: 100%;
+}
+
+.headerimg {
+	background-color: lightgray;
+	background-image: url("../img/bg.jpg");
+	background-size: cover;
+	min-height: 5em;
+}
+
+.homelink {
+	text-align: left;
+	max-width: 1.3em;
+}
+
+.navlink {
+	padding-left: 0.75em;
+}
+
+.bodytext {
+	margin: 2em;
+}
+
+.subtitle {
+	text-align: left;
+}
+
+.thumbnails {
+	display: grid;
+	grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+}
+
+.thumbnail1 {
+	background-color: lightgray;
+	min-width: 10%;
+	min-height: 3em;
+}
+
+.thumbnail2 {
+	background-color: lightgray;
+	min-width: 10%;
+	min-height: 3em;
+}
+
+.thumbnail3 {
+	background-color: lightgray;
+	min-width: 10%;
+	min-height: 3em;
+}
 
 
 /* ------------------------------------------------------------ */
