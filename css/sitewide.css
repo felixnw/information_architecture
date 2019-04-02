@@ -30,7 +30,8 @@ body {
 	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.5em;
-	color: #222;
+	color: whitesmoke;
+	/* color: #222; */
 }
 
 /*	Generally, you will only want one container element in
@@ -40,6 +41,7 @@ body {
 */
 .container {
 	background-color: #322F2F;
+	width: 100%;
 }
 
 .global-nav {
@@ -47,13 +49,21 @@ body {
 	padding: 1em;
 	position: fixed;
 	width: 100%;
+	background-color: black;
+}
+
+.global-nav a {
+	text-decoration: none;
+	color: inherit;
 }
 
 .headerimg {
 	background-color: lightgray;
 	background-image: url("../img/bg.jpg");
 	background-size: cover;
-	min-height: 5em;
+	background-position: center;
+	background-position-y: 75%;
+	min-height: 50vh;
 }
 
 .homelink {
@@ -65,6 +75,11 @@ body {
 	padding-left: 0.75em;
 }
 
+.bodyhome {
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
 .bodytext {
 	margin: 2em;
 }
@@ -74,8 +89,8 @@ body {
 }
 
 .thumbnails {
-	display: grid;
-	grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+	display: flex;
+	justify-content: space-around;
 }
 
 .thumbnail1 {
@@ -103,13 +118,7 @@ body {
 	
 	/* container on larger screens */
 	.container {
-		width: 90%;
-		max-width: 1200px;
-		margin: 2em;
-		margin-right: auto;
-		margin-left: auto;
-		padding: 2em;
-		border: 1px solid #ddd;
+		width: 100%;
 	}
 
 } /* end media query */

@@ -30,7 +30,8 @@ body {
 	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.5em;
-	color: #222;
+	color: whitesmoke;
+	/* color: #222; */
 }
 
 /*	Generally, you will only want one container element in
@@ -39,10 +40,76 @@ body {
 	something wrong. 	
 */
 .container {
-	padding: 1em;
-	background-color: #F0F0F0;
+	background-color: #322F2F;
+	width: 100%;
 }
 
+.global-nav {
+	font-size: 1.5em;
+	padding: 1em;
+	position: fixed;
+	width: 100%;
+	background-color: black;
+}
+
+.global-nav a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.headerimg {
+	background-color: lightgray;
+	background-image: url("../img/bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-position-y: 75%;
+	min-height: 50vh;
+}
+
+.homelink {
+	text-align: left;
+	max-width: 1.3em;
+}
+
+.navlink {
+	padding-left: 0.75em;
+}
+
+.bodyhome {
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+.bodytext {
+	margin: 2em;
+}
+
+.subtitle {
+	text-align: left;
+}
+
+.thumbnails {
+	display: flex;
+	justify-content: space-around;
+}
+
+.thumbnail1 {
+	background-color: lightgray;
+	min-width: 10%;
+	min-height: 3em;
+}
+
+.thumbnail2 {
+	background-color: lightgray;
+	min-width: 10%;
+	min-height: 3em;
+}
+
+.thumbnail3 {
+	background-color: lightgray;
+	min-width: 10%;
+	min-height: 3em;
+}
 
 
 /* ------------------------------------------------------------ */
@@ -51,13 +118,7 @@ body {
 	
 	/* container on larger screens */
 	.container {
-		width: 90%;
-		max-width: 1200px;
-		margin: 2em;
-		margin-right: auto;
-		margin-left: auto;
-		padding: 2em;
-		border: 1px solid #ddd;
+		width: 100%;
 	}
 
 } /* end media query */

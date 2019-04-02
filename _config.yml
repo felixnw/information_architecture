@@ -2,7 +2,7 @@
 # Site settings
 title: Your awesome title
 description: A starter site
-baseurl: "/web1-jekyll" # folder where your site lives, e.g. /web1-sp - needs to start with a slash
+baseurl: "/information_architecture" # folder where your site lives, e.g. /web1-sp - needs to start with a slash
 
 # Build settings
 markdown: kramdown
