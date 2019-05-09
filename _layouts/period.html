@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>FSA/OWI Decade</title>
+	<meta name="description" content="{{ page.description }}">
+	
+	<!-- Enable responsive layouts; tell browsers not to shrink pages to fit small screens -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Load styles -->
+	<!-- For production, combine all of the stylesheets -->
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/sitewide.css">
+	
+	<!-- Webfonts -->
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+
+</head>
+<body class="homepage">
+<!-- Change this classname for each page/type! -->
+
+	<!-- Page content typically goes inside the container -->
+	<div class="container">
+		<!-- global navbar -->
+		<nav class="global-nav">
+			<div>
+				<img class="logo" src="img/test.svg"></img>
+				<a class="homelink" href="{{ site.baseurl }}/">FSA/OWI Negatives</a>
+			</div>
+			
+			<div class="part1">
+				<a class="navlink" href="{{ site.baseurl }}/gallery">Images</a>
+				<a class="navlink" href="{{ site.baseurl }}/about">About</a>
+			</div>
+		</nav>
+
+		<div class="bodyhome">
+			<h1 class="pagetitle">{{page.title}}</h1>	
+			{{content}}
+			<h2 id="1930">1930s</h2>
+			<ul class = "collection">
+				{% for p in site.pages %}
+					{% if p.time=="1930s" %}
+						<li>
+							<a href="{{ site.baseurl }}{{ p.url }}">
+								<img class = "thumbnail" src="{{ site.baseurl }}\img\{{ p.img }}" alt="{{ p.title }}">
+								{{ p.title }}
+							</a>
+						</li>
+					{% endif %}
+				{% endfor %}    
+			</ul>
+
+			<h2 id="1940">1940s</h2>
+			<ul class = "collection">
+				{% for p in site.pages %}
+					{% if p.time=="1940s" %}
+						<li>
+							<a href="{{ site.baseurl }}{{ p.url }}">
+								<img class = "thumbnail" src="{{ site.baseurl }}\img\{{ p.img }}" alt="{{ p.title }}">
+								{{ p.title }}
+							</a>
+						</li>
+					{% endif %}
+				{% endfor %}    
+			</ul>
+		</div>
+		<br>
+
+	</div><!-- end container -->
+	
+</body>
+</html>

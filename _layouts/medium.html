@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>FSA/OWI Mediums</title>
+	<meta name="description" content="{{ page.description }}">
+	
+	<!-- Enable responsive layouts; tell browsers not to shrink pages to fit small screens -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Load styles -->
+	<!-- For production, combine all of the stylesheets -->
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/sitewide.css">
+	
+	<!-- Webfonts -->
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+
+</head>
+<body class="homepage">
+<!-- Change this classname for each page/type! -->
+
+	<!-- Page content typically goes inside the container -->
+	<div class="container">
+		<!-- global navbar -->
+		<nav class="global-nav">
+			<div>
+				<img class="logo" src="img/test.svg"></img>
+				<a class="homelink" href="{{ site.baseurl }}/">FSA/OWI Negatives</a>
+			</div>
+			
+			<div class="part1">
+				<a class="navlink" href="{{ site.baseurl }}/gallery">Images</a>
+				<a class="navlink" href="{{ site.baseurl }}/about">About</a>
+			</div>
+		</nav>
+
+		<div class="bodyhome">
+			<h1 class="pagetitle">{{page.title}}</h1>	
+			{{content}}
+			<h2 id="SN">Safety Negative</h2>
+			<ul class = "collection">
+				{% for p in site.pages %}
+					{% if p.type=="Safety Negative" %}
+						<li>
+							<a href="{{ site.baseurl }}{{ p.url }}">
+								<img class = "thumbnail" src="{{ site.baseurl }}\img\{{ p.img }}" alt="{{ p.title }}">
+								{{ p.title }}
+							</a>
+						</li>
+					{% endif %}
+				{% endfor %}    
+			</ul>
+
+			<h2 id="NN">Nitrate Negative</h2>
+			<ul class = "collection">
+				{% for p in site.pages %}
+					{% if p.type=="Nitrate Negative" %}
+						<li>
+							<a href="{{ site.baseurl }}{{ p.url }}">
+								<img class = "thumbnail" src="{{ site.baseurl }}\img\{{ p.img }}" alt="{{ p.title }}">
+								{{ p.title }}
+							</a>
+						</li>
+					{% endif %}
+				{% endfor %}    
+			</ul>
+
+			<h2 id="35">35mm</h2>
+			<ul class = "collection">
+				{% for p in site.pages %}
+					{% if p.size=="35mm" %}
+						<li>
+							<a href="{{ site.baseurl }}{{ p.url }}">
+								<img class = "thumbnail" src="{{ site.baseurl }}\img\{{ p.img }}" alt="{{ p.title }}">
+								{{ p.title }}
+							</a>
+						</li>
+					{% endif %}
+				{% endfor %}    
+			</ul>
+
+			<h2 id="8x10">8x10</h2>
+			<ul class = "collection">
+				{% for p in site.pages %}
+					{% if p.size=="8x10" %}
+						<li>
+							<a href="{{ site.baseurl }}{{ p.url }}">
+								<img class = "thumbnail" src="{{ site.baseurl }}\img\{{ p.img }}" alt="{{ p.title }}">
+								{{ p.title }}
+							</a>
+						</li>
+					{% endif %}
+				{% endfor %}    
+			</ul>
+
+			<h2 id="4x5">4x5</h2>
+			<ul class = "collection">
+				{% for p in site.pages %}
+					{% if p.size=="4x5" %}
+						<li>
+							<a href="{{ site.baseurl }}{{ p.url }}">
+								<img class = "thumbnail" src="{{ site.baseurl }}\img\{{ p.img }}" alt="{{ p.title }}">
+								{{ p.title }}
+							</a>
+						</li>
+					{% endif %}
+				{% endfor %}    
+			</ul>
+
+			<h2 id="34">3 1/4 x 4 1/4</h2>
+			<ul class = "collection">
+				{% for p in site.pages %}
+					{% if p.size=="3 1/4 x 4 1/4" %}
+						<li>
+							<a href="{{ site.baseurl }}{{ p.url }}">
+								<img class = "thumbnail" src="{{ site.baseurl }}\img\{{ p.img }}" alt="{{ p.title }}">
+								{{ p.title }}
+							</a>
+						</li>
+					{% endif %}
+				{% endfor %}    
+			</ul>
+
+			<h2 id="22">2 1/4 x 2 1/4</h2>
+			<ul class = "collection">
+				{% for p in site.pages %}
+					{% if p.size=="2 1/4 x 2 1/4" %}
+						<li>
+							<a href="{{ site.baseurl }}{{ p.url }}">
+								<img class = "thumbnail" src="{{ site.baseurl }}\img\{{ p.img }}" alt="{{ p.title }}">
+								{{ p.title }}
+							</a>
+						</li>
+					{% endif %}
+				{% endfor %}    
+			</ul>
+		</div>
+		<br>
+
+
+
+	</div><!-- end container -->
+	
+</body>
+</html>

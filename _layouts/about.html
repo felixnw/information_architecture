@@ -4,7 +4,7 @@
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Title goes here</title>
+	<title>FSA/OWI: About</title>
 	<meta name="description" content="{{ page.description }}">
 	
 	<!-- Enable responsive layouts; tell browsers not to shrink pages to fit small screens -->
@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/sitewide.css">
 	
 	<!-- Webfonts -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
 
 </head>
 <body class="homepage">
@@ -23,6 +23,24 @@
 
 	<!-- Page content typically goes inside the container -->
 	<div class="container">
+		<!-- global navbar -->
+		<nav class="global-nav">
+				<div>
+					<img class="logo" src="img/test.svg"></img>
+					<a class="homelink" href="{{ site.baseurl }}/">FSA/OWI Negatives</a>
+				</div>
+				
+				<div class="part1">
+					<a class="navlink" href="{{ site.baseurl }}/gallery">Images</a>
+					<a class="navlink" href="{{ site.baseurl }}/about">About</a>
+				</div>
+		</nav>
+		<div class="bodyhome">
+			<div class= "bodytext">
+				{{ content }}
+			</div>
+		</div>
+		<br>
 
 	</div><!-- end container -->
 	
